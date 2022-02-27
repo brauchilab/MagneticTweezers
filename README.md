@@ -12,6 +12,7 @@ El sistema consiste de cabezal "Magnetic Head Finder" (Brush Industries, 902836)
 ![Alt text](/IMG/SCHM.png)
 ## 1.3. Cabezal magnético 
 ![Alt text](/IMG/HEAD.png)
+
 (Brush Industries, 902836)
 
 # 2. Software
