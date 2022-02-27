@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/resources">
+        <file>img/janelia.png</file>
+        <file>img/UACH.png</file>
+        <file>img/magnet.png</file>
+        <file>font/garamond.TTF</file>
+    </qresource>
+</RCC>
