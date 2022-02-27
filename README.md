@@ -34,7 +34,7 @@ NOTA Los canales están numerados con 1 y 2.
 ```
   I c i 
 ```
-- Ajusta la corriente en el canal 'c' a 'i' amperes (-1.0 a +1.0) 
+- Ajusta la corriente en el canal *'c'* a *'i'* amperes (-1.0 a +1.0) 
 
 **Onda Sinusoidal**
 ```
