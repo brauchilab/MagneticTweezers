@@ -23,6 +23,7 @@ El sistema consiste de cabezal "Magnetic Head Finder" (Brush Industries, 902836)
 
 Los comandos toletan mayúsculas/minúsculas. Los parámetros pueden ser separados por comas o espacios. Cada comando debe terminar CR (0x0D) y LF (0x0A),
 NOTE: Los canales están numerados con 1 y 2.
+
 **AYUDA**
 ```
   ? 
@@ -34,25 +35,25 @@ NOTE: Los canales están numerados con 1 y 2.
   I c i 
 ```
 - Ajusta la corriente en el canal 'c' a 'i' amperes (-1.0 a +1.0) 
-- 
 
 **Onda Sinusoidal**
 ```
   S f a o 
 ```
 - Configura una señal sinusoidal, donde:
-    - f = frecuencia en Hz (0.1 to 100.0)
-    - a = peak de corriente en amp (0.0 to +1.0)
-    - o = offset en amp (-1.0 to +1.0)
-    NOTE: El peak de corriente + offset no debe superar los +- 1.0A
-``` 
-  S T c 
-```
-- Ejecuta el comando previamete asignado en el canal 'c' cuando la señal en el canal TTL de trigger es ALTA (+5V). El comando se detiene cuando es BAJA (0V).
+    - *f* = frecuencia en Hz (0.1 to 100.0)
+    - *a* = peak de corriente en amp (0.0 to +1.0)
+    - *o* = offset en amp (-1.0 to +1.0)
+    
+    NOTA: El peak de corriente + offset no debe superar los +- 1.0A
 ```
   S c 
 ```
--  Ejecuta la última configuración ingresada para la señal sinusoidal en el canal 'c'. S 0 detendrá cualquier configuración previa. 
+-  Ejecuta la última configuración ingresada para la señal sinusoidal en el canal *'c'*. *'S 0'* detendrá cualquier configuración previa. 
+``` 
+  S T c 
+```
+- Ejecuta el comando previamete asignado en el canal *'c'* cuando la señal en el canal TTL de trigger es ALTA (+5V). El comando se detiene cuando es BAJA (0V).
 ``` 
   S 
 ```
@@ -62,19 +63,22 @@ NOTE: Los canales están numerados con 1 y 2.
 ```
     L i t 
  ```
--  Ingresa un valor en una lista de corrientes, en donde: Enter a value into a current list where:
-    - i = Corriente en amps (-1.0 to +1.0)
-    - t = Tiempo e ejecución en milisegundos. time to run the output at this current in milliseconds
-    NOTE: Si se asigna como tiempo '0', toda la lista de corriente quedará limpia. 
-```
- L T c 
-```
-- Ejecuta la lista en el canal 'c' cuando la señal en el canal trigger TTL es ALTA. Parará cuando ésta sea BAJA. 
+-  Ingresa un valor en una lista de corrientes, en donde: 
+    - *i* = Corriente en amps (-1.0 a +1.0)
+    - *t* = Tiempo e ejecución en milisegundos.
+    
+    NOTA: Si se asigna como tiempo *'0'*, toda la lista de corriente quedará limpia. 
+
  ```
   L c
  ```
-- Ejecuta la lista en el canal 'c'. 
-- ‘L 0’ detendrá cualquier lista que se esté ejecutando.
+- Ejecuta la lista en el canal *'c'*. 
+- *‘L 0’* detendrá cualquier lista que se esté ejecutando.
+
+```
+ L T c 
+```
+- Ejecuta la lista en el canal *'c'* cuando la señal en el canal trigger TTL es ALTA (+5V). Parará cuando ésta sea BAJA (0V). 
 ```
   L 
 ```
@@ -85,17 +89,20 @@ NOTE: Los canales están numerados con 1 y 2.
     R i t 
 ```
 - Ingresa un valor en la lista de rampa, en donde:
-    - i = corriente en amperes (-1.0 to +1.0)
-    - t = Tiempo (ms) que demora ir desde un punto previo al nuevo punto en la rampa.
-    NOTE: Un tiempo de 0 limpiará la lista-
-```   
-    R T c
-```
--  Ejecuta la lista de puntos de la rampa en el canal 'c' cuando la señal en la entrada TTL de Trigger sea ALTA (+V). Ésta se detendrá cuando la señal sea BAJA (0V).
+    - *i* = corriente en amperes (-1.0 a +1.0)
+    - *t* = Tiempo (ms) que demora ir desde un punto previo al nuevo punto en la rampa.
+    
+    NOTA: Un tiempo de *0* limpiará la lista-
+
 ```
     R c 
 ```
-- Ejecuta la lista en el canal 'c'. 'R 0' detendrá cualquier protocolo activo.
+- Ejecuta la lista en el canal *'c'*. *'R 0'* detendrá cualquier protocolo activo.
+```   
+    R T c
+```
+-  Ejecuta la lista de puntos de la rampa en el canal *'c'* cuando la señal en la entrada TTL de Trigger sea ALTA (+5V). Ésta se detendrá cuando la señal sea BAJA (0V).
+
 ```
     R
 ```
