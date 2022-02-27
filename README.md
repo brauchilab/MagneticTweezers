@@ -22,7 +22,7 @@ El sistema consiste de cabezal "Magnetic Head Finder" (Brush Industries, 902836)
 ## 2.2. Comandos serial
 
 Los comandos toletan mayúsculas/minúsculas. Los parámetros pueden ser separados por comas o espacios. Cada comando debe terminar CR (0x0D) y LF (0x0A),
-NOTE: Los canales están numerados con 1 y 2.
+NOTA Los canales están numerados con 1 y 2.
 
 **AYUDA**
 ```
@@ -92,7 +92,7 @@ NOTE: Los canales están numerados con 1 y 2.
     - *i* = corriente en amperes (-1.0 a +1.0)
     - *t* = Tiempo (ms) que demora ir desde un punto previo al nuevo punto en la rampa.
     
-    NOTA: Un tiempo de *0* limpiará la lista-
+    NOTA: Un tiempo de *0* limpiará la lista.
 
 ```
     R c 
