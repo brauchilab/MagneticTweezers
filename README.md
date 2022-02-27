@@ -107,3 +107,13 @@ NOTA Los canales están numerados con 1 y 2.
     R
 ```
 - Muestra ayuda con este comando.
+
+# Autores
+
+* **Sebastián Braüchi**
+  * Laboratorio de Fisilogía Sensorial, Universidad Austral de Chile
+  * HHMI Janelia Research Campus 
+* **Cristian Castillo**
+  * Laboratorio de Fisilogía Sensorial, Universidad Austral de Chile
+* **Steven Sawtelle**
+  * HHMI Janelia Research Campus
